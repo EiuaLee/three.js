@@ -40923,7 +40923,7 @@ class ObjectLoader extends Loader {
 			const manager = new LoadingManager( onLoad );
 
 			loader = new ImageLoader( manager );
-			loader.setCrossOrigin( this.crossOrigin );
+			loader.setCrossOrigin( 'Anonymous' );
 
 			for ( let i = 0, il = json.length; i < il; i ++ ) {
 
