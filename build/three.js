@@ -29728,7 +29728,7 @@
 			if (json !== undefined && json.length > 0) {
 				const manager = new LoadingManager(onLoad);
 				loader = new ImageLoader(manager);
-				loader.setCrossOrigin(this.crossOrigin);
+				loader.setCrossOrigin('Anonymous');
 
 				for (let i = 0, il = json.length; i < il; i++) {
 					const image = json[i];
